@@ -4,11 +4,11 @@ import DeleteUser from "./DeleteUser";
 import { useNavigate } from "react-router-dom";
 import { deleteUser } from "../redux/actions/userAction";
 import { useDispatch } from "react-redux";
-import { IUser } from "../types";
+import { IUser, IUserResponse } from "../types";
 
 const headers = ["First Name", "Last Name", "Phone Number", "Age", "", ""];
 export default function AllUsers() {
-  const [allUsers, setAllUsers] = React.useState<IUser[]>();
+  const [allUsers, setAllUsers] = React.useState<IUserResponse[]>();
   const [showDeletePopup, setShowDeletePopup] = React.useState(false);
   const [currentUser, setCurrentUser] = React.useState<any>();
 

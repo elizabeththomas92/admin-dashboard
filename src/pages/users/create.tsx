@@ -7,7 +7,12 @@ import { addUser } from "../../redux/actions/userAction";
 import { IUser } from "../../types";
 
 function CreateUser() {
-  const [userDetails, setUserDetails] = React.useState<IUser>();
+  const [userDetails, setUserDetails] = React.useState<IUser>({
+    firstName: "",
+    lastName: "",
+    phoneNumber: "",
+    age: "",
+  });
   const [formErrors, setFromErrors] = React.useState<any>({
     firstName: "",
     lastName: "",
@@ -51,7 +56,7 @@ function CreateUser() {
 
   const handleUpdateUser = (event: React.SyntheticEvent) => {
     event.preventDefault();
-    if (validateFormDetails() && userDetails) {
+    if (validateFormDetails()) {
       dispatch(addUser(userDetails) as any)
         .then(() => {
           console.log("User created successfully!");
