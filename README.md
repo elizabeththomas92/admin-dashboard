@@ -6,5 +6,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+Here is a demo:
 
-![alt text](https://www.loom.com/share/3a3dcbcbe4784e27a9fb12f02b5d5853)
+https://www.loom.com/share/3a3dcbcbe4784e27a9fb12f02b5d5853
